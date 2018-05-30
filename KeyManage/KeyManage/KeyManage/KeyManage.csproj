@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1E53F5B-CD30-4142-B7DF-80BF8D9F67CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeyManage</RootNamespace>
+    <AssemblyName>KeyManage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsComHelper.cs" />
+    <Compile Include="clsFormStatic.cs" />
+    <Compile Include="clsPassword.cs" />
+    <Compile Include="clsSqlPassword.cs" />
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageKey.Designer.cs">
+      <DependentUpon>frmManageKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutKey.Designer.cs">
+      <DependentUpon>frmOutKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutKeyTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutKeyTouch.Designer.cs">
+      <DependentUpon>frmOutKeyTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.Designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword1.Designer.cs">
+      <DependentUpon>frmPassword1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPutKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPutKey.Designer.cs">
+      <DependentUpon>frmPutKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageSite.Designer.cs">
+      <DependentUpon>frmManageSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPutKeyTouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPutKeyTouch.Designer.cs">
+      <DependentUpon>frmPutKeyTouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecord.Designer.cs">
+      <DependentUpon>frmRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecordLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecordLook.Designer.cs">
+      <DependentUpon>frmRecordLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpticalDriver.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serialPort.cs" />
+    <Compile Include="thread.cs" />
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageKey.resx">
+      <DependentUpon>frmManageKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageSite.resx">
+      <DependentUpon>frmManageSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutKey.resx">
+      <DependentUpon>frmOutKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutKeyTouch.resx">
+      <DependentUpon>frmOutKeyTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword1.resx">
+      <DependentUpon>frmPassword1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPutKey.resx">
+      <DependentUpon>frmPutKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPutKeyTouch.resx">
+      <DependentUpon>frmPutKeyTouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecord.resx">
+      <DependentUpon>frmRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecordLook.resx">
+      <DependentUpon>frmRecordLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IniFile\IniFile.csproj">
+      <Project>{8F71EA20-0448-44A7-81D7-ABC6F03FA77B}</Project>
+      <Name>IniFile</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlFile\SqlFile.csproj">
+      <Project>{21CB9C75-D363-4FC1-84E3-0DE085C32417}</Project>
+      <Name>SqlFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
